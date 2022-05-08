@@ -11,6 +11,7 @@
 cockroach_speed(1.08) -> 30
 cockroach_speed(2.13) -> 59
 """
+import math
 
 
 def cockroach_speed(kmh_speed: float) -> int:
@@ -20,8 +21,7 @@ def cockroach_speed(kmh_speed: float) -> int:
 
     :return: скорость в см/с
     """
-    result = None
-    return result
+    return math.floor(kmh_speed * ((5 / 18) * 100))
 
 
 if __name__ == '__main__':

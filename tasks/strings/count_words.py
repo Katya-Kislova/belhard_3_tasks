@@ -22,10 +22,20 @@ def count_words(str_to_count: str) -> int:
 
     :return: количество слов в строке
     """
-    result = None
-    return result
+    # if str_to_count:
+    #     result_list = str_to_count.split(' ')
+    #     return len(result_list)
+    # else:
+    #     return 0
+    return len(str_to_count.split(' ')) if str_to_count else 0
 
 
 if __name__ == '__main__':
     string = input('Введите строку для подсчета слов: ')
     print(f"Количество слов: {count_words(string)}")
+
+
+
+
+
+
